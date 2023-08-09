@@ -24,6 +24,5 @@ st.session_state.name
 if st.checkbox('Show dataframe'):
   chart_data = pd.DataFrame(
     np.random.randn(20,3),
-    comlumns = ['a','b','c']
-  ) 
+    comlumns = ['a','b','c']  ) 
   chart_data
