@@ -6,3 +6,4 @@ df = pd.DataFrame({'Nomes':['Gabriela', 'Julia', 'Bruno', 'Sara'],'Idades': [22,
 st.write(df)
 st.table(df)
 df
+st.dataframe()
