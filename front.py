@@ -10,7 +10,10 @@ st.title("Olá mundo")
 #df
 #st.dataframe(df.style.highlight_max())
 
-map_data = pd.DataFrame(np.random.randn(1000,2) / [50,50] + [37.76, 0122.4],
-                        columns = [ 'lat', 'lon'] )
+#map_data = pd.DataFrame(np.random.randn(1000,2) / [50,50] + [37.76, 0122.4],
+#                       columns = [ 'lat', 'lon'] )
 
-st.map(map_data)
+#st.map(map_data)
+
+x = st.slider('x')
+st.write(x, 'squared is', x * x)
