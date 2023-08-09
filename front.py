@@ -26,4 +26,4 @@ if st.checkbox('Show dataframe'):
     np.random.randn(20,3),
     comlumns = ['a','b','c']
   ) 
-chart_data
+  chart_data
