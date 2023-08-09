@@ -26,3 +26,11 @@ if st.checkbox('Show dataframe'):
     np.random.randn(20,3),
     columns = ['a','b','c']  ) 
   chart_data
+
+df = pd.DataFrame({
+  'first column': [1,2,3,4],
+  'secind column': [10,20,30,40]})
+
+option = st.selectbox('Wich number do you like best?',df['first column'])
+
+'You selected: ', option
