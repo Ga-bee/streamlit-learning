@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+import time
 
 st.title("Olá mundo")
 #df = pd.DataFrame({'Nomes':['Gabriela', 'Julia', 'Bruno', 'Sara'],'Idades': [22,23,45,26]})
@@ -56,3 +56,13 @@ with right_column:
         'Sorting hat',
         ("Gryffindor", "Ravenclaw", "Hufflepuff", "Slytherin"))
     st.write(f"You are in {chosen} house!")
+
+
+
+'Starting a long computation...'
+latest_iteration = st.empty()
+bar = st.progress(0)
+
+
+
+
