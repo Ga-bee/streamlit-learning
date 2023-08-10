@@ -61,11 +61,12 @@ with right_column:
 
 'Starting a long computation...'
 latest_iteration = st.empty()
-bar = st.progress(0)
+
 progress = 0
+bar = st.progress(progress)
 for i in range(100):
   progress += 1
-  st.progress(progress)
+  bar = st.progress(progress)
   
   time.sleep(1)
 
