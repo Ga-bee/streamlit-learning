@@ -64,10 +64,11 @@ latest_iteration = st.empty()
 
 progress = 0
 bar = st.progress(progress)
+
 for i in range(100):
-  progress += 1
-  bar = st.progress(progress)
+  latest_iteration.text(f'Iteration {i+1}')
+  bar.progress(i+1)
   
-  time.sleep(1)
+  time.sleep(0.11)
 
 
